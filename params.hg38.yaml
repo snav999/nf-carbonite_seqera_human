@@ -1,0 +1,14 @@
+# Mandatory parameters
+genome_lib_dir : /g/data/at25/reference/ctat_genome_lib_build_dir
+star_dir : /g/data/at25/reference/STAR
+gtf_file : /g/data/at25/reference/gencode.v41.annotation.gtf
+ensg2hgnc_file: /g/data/at25/reference/gencode_v41_ensg_hgnc.20250718.csv
+
+# Optional parameters
+rnaindel_dir : /g/data/at25/reference/data_dir_grch38
+ensembl_data_dir : /g/data/at25/reference/ensembl
+mixcr_license : /g/data/at25/reference/mi.license
+te_gtf_file : /g/data/at25/reference/GRCh38_GENCODE_rmsk_TE.gtf
+freebayes_interval_list: /g/data/at25/reference/pathogenic_snps.bed
+annovar_dir : /g/data/at25/reference/annovar
+gatk_interval_list : /g/data/at25/reference/rna_snps.interval_list
