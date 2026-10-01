@@ -100,13 +100,13 @@
           "type": "string",
           "format": "file-path",
           "description": "Path to transposable element GTF file (optional - if not provided, TECOUNT analysis will be skipped)",
-          "pattern": "^\\\\S+\\\\.gtf(\\\\.gz)?$"
+          "pattern": "^\\S+\\.gtf(\\.gz)?$"
         },
         "freebayes_interval_list": {
           "type": "string",
           "format": "file-path",
           "description": "Optional interval list for targeted analysis (if not provided, FREEBAYES analysis will be skipped)",
-          "pattern": "^\\\\S+\\\\.bed(\\\\.gz)?$"
+          "pattern": "^\\S+\\.bed(\\.gz)?$"
         },
         "mintie_dir": {
           "type": "string",
