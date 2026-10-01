@@ -59,7 +59,7 @@
         "gtf_file": {
           "type": "string",
           "format": "file-path",
-          "pattern": "^\\\\S+\\\\.gtf(\\\\.gz)?$",
+          "pattern": "^\\S+\\.gtf(\\.gz)?$",
           "description": "Path to gene annotation GTF file"
         },
         "ensg2hgnc_file": {
