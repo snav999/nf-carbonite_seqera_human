@@ -11,6 +11,9 @@ process CONCAT_FASTQ {
 
     script: // concat_fastq.py is bundled with the pipeline, in /bin
     """
+
+   chmod +x ${projectDir}/bin/concat_fastq.py
+
     concat_fastq.py ${directories} ${rnaseq_id}
     chmod +x run_concat.sh
     ./run_concat.sh
