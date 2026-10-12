@@ -16,6 +16,9 @@ process RSEM {
 
     script:
     """
+
+    chmod +x ${projectDir}/bin/ensg2hgnc.py
+
     rsem-calculate-expression --no-bam-output --num-threads 13 --bam --paired-end ${transcriptome} ${dir}/${params.reference_name} ${rnaseq_id}_exp.${params.ref_genome_version}
 
     ensg2hgnc.py ${ensg2hgnc_file} ${rnaseq_id}_exp.${params.ref_genome_version}.genes.results ${rnaseq_id}
