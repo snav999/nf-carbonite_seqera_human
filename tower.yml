@@ -1,0 +1,34 @@
+# Seqera report configuration for nf-carbonite
+# Place this file in the root of the pipeline repository.
+# These patterns must match files that your pipeline actually publishes.
+
+reports:
+  "multiqc_report.html":
+    display: "MultiQC quality-control report"
+    mimeType: "text/html"
+
+  "report-*.html":
+    display: "Nextflow execution report"
+    mimeType: "text/html"
+
+  "timeline-*.html":
+    display: "Nextflow execution timeline"
+    mimeType: "text/html"
+
+  "dag-*.html":
+    display: "Nextflow workflow diagram"
+    mimeType: "text/html"
+
+  "trace-*.txt":
+    display: "Nextflow trace"
+    mimeType: "text/plain"
+
+# Add entries for pipeline-specific published outputs if useful, e.g.:
+  "**/*.named.genes.results":
+    display: "Gene expression counts file"
+  "**/*.isoforms.results":
+    display: "Isoform expression counts file"
+  "**/arriba/*.pdf":
+    display: "Fusions report (arriba)"
+  "**/star/*.bam":
+    display: "Alignment files (star)"
