@@ -152,12 +152,12 @@ workflow RNASEQ {
             ) 
         }
     } 
-    ALLSORTS (
-        RSEM.out.named_genes
-    )
-    TALLSORTS (
-        RSEM.out.named_genes
-    )
+#    ALLSORTS (
+#        RSEM.out.named_genes
+#    )
+#    TALLSORTS (
+#        RSEM.out.named_genes
+#    )
 
     GATK_SPLIT_CIGAR (
         PICARD.out.sorted_bam,
